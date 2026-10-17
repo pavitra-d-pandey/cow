@@ -2,15 +2,15 @@ import PageHead from "../components/PageHead";
 import ContactForm from "../components/ContactForm";
 import { org } from "../data/site";
 
-export const metadata = { title: "संपर्क करें" };
+export const metadata = { title: "Contact" };
 
 export default function Contact() {
   return (
     <>
       <PageHead
-        title="संपर्क करें"
-        crumb="संपर्क करें"
-        lead="प्रशिक्षण, आजीविका मॉडल, लोकल-टेक किट या किसी भी सहायता के लिए हमसे जुड़ें।"
+        title="Contact Us"
+        crumb="Contact"
+        lead="Reach out for training, livelihood models, local-tech kits or any kind of support."
       />
 
       <section className="section">
@@ -18,13 +18,13 @@ export default function Contact() {
           <div className="split" style={{ alignItems: "start" }}>
             {/* Info side */}
             <div>
-              <span className="eyebrow">हमसे जुड़ें</span>
-              <h2 className="section-title">संपर्क विवरण</h2>
+              <span className="eyebrow">Get in touch</span>
+              <h2 className="section-title">Contact details</h2>
 
               <div style={{ display: "grid", gap: 16, marginTop: 18 }}>
                 <div className="info-card">
                   <div className="icon-badge">📍</div>
-                  <h3>पता</h3>
+                  <h3>Address</h3>
                   <p>
                     {org.address} {org.city}, {org.district}, {org.state} –{" "}
                     {org.pincode}
@@ -32,18 +32,18 @@ export default function Contact() {
                 </div>
                 <div className="info-card">
                   <div className="icon-badge">📞</div>
-                  <h3>फ़ोन / हेल्पलाइन</h3>
+                  <h3>Phone / Helpline</h3>
                   <p>
-                    कार्यालय: {org.phone}
+                    Office: {org.phone}
                     <br />
-                    वैकल्पिक: {org.altPhone}
+                    Alternate: {org.altPhone}
                     <br />
-                    किसान-हेल्पलाइन: {org.helpdesk}
+                    Farmer Helpline: {org.helpdesk}
                   </p>
                 </div>
                 <div className="info-card">
                   <div className="icon-badge">✉</div>
-                  <h3>ईमेल</h3>
+                  <h3>Email</h3>
                   <p>
                     {org.email}
                     <br />
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
                 <div className="info-card">
                   <div className="icon-badge">🕒</div>
-                  <h3>कार्य-समय</h3>
+                  <h3>Working Hours</h3>
                   <p>{org.hours}</p>
                 </div>
               </div>
@@ -60,10 +60,11 @@ export default function Contact() {
 
             {/* Form side */}
             <div>
-              <span className="eyebrow">अनुरोध भेजें</span>
-              <h2 className="section-title">हमें संदेश लिखें</h2>
+              <span className="eyebrow">Send a request</span>
+              <h2 className="section-title">Write to us</h2>
               <p className="section-lead" style={{ marginBottom: 18 }}>
-                नीचे फ़ॉर्म भरें — हमारी टीम 2 कार्य-दिवसों में आपसे संपर्क करेगी।
+                Fill the form below — our team will contact you within 2 working
+                days.
               </p>
               <ContactForm />
             </div>
@@ -75,8 +76,8 @@ export default function Contact() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 22 }}>
-            <span className="eyebrow">पहुँचें</span>
-            <h2 className="section-title">हमारा स्थान</h2>
+            <span className="eyebrow">Find Us</span>
+            <h2 className="section-title">Our Location</h2>
           </div>
           <div
             style={{
@@ -87,8 +88,8 @@ export default function Contact() {
             }}
           >
             <iframe
-              title="स्थान मानचित्र"
-              src="https://www.google.com/maps?q=Lucknow%2C%20Uttar%20Pradesh&output=embed"
+              title="Location map"
+              src="https://www.google.com/maps?q=Hanumanganj%2C%20Prayagraj%2C%20Uttar%20Pradesh&output=embed"
               width="100%"
               height="420"
               style={{ border: 0, display: "block" }}

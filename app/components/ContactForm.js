@@ -14,11 +14,11 @@ export default function ContactForm() {
     return (
       <div className="form">
         <div className="note-ok">
-          ✓ धन्यवाद! आपका अनुरोध दर्ज कर लिया गया है। हमारी टीम 2 कार्य-दिवसों में
-          आपसे संपर्क करेगी।
+          ✓ Thank you! Your request has been recorded. Our team will contact you
+          within 2 working days.
         </div>
         <button className="btn btn-green" onClick={() => setDone(false)}>
-          एक और अनुरोध भेजें
+          Send another request
         </button>
       </div>
     );
@@ -28,53 +28,53 @@ export default function ContactForm() {
     <form className="form" onSubmit={onSubmit}>
       <div className="form-row">
         <div>
-          <label>पूरा नाम *</label>
-          <input required placeholder="जैसे: राम प्रसाद यादव" />
+          <label>Full Name *</label>
+          <input required placeholder="e.g. Ram Prasad Yadav" />
         </div>
         <div>
-          <label>मोबाइल नंबर *</label>
-          <input required type="tel" placeholder="10 अंकों का मोबाइल" />
+          <label>Mobile Number *</label>
+          <input required type="tel" placeholder="10-digit mobile" />
         </div>
       </div>
       <div className="form-row">
         <div>
-          <label>जिला</label>
-          <input placeholder="जैसे: लखनऊ" />
+          <label>District</label>
+          <input placeholder="e.g. Prayagraj" />
         </div>
         <div>
-          <label>रुचि का क्षेत्र</label>
+          <label>Area of Interest</label>
           <select defaultValue="">
             <option value="" disabled>
-              चुनें
+              Select
             </option>
-            <option>किसान प्रशिक्षण</option>
-            <option>आजीविका मॉडल / इकाई-योजना</option>
-            <option>लोकल-टेक किट खरीदना</option>
-            <option>SHG / महिला समूह</option>
-            <option>गौशाला क्षमता-संवर्धन</option>
-            <option>अन्य</option>
+            <option>Farmer Training</option>
+            <option>Livelihood Model / Unit Plan</option>
+            <option>Buying a Local-Tech Kit</option>
+            <option>SHG / Women's Group</option>
+            <option>Gaushala Capacity Building</option>
+            <option>Other</option>
           </select>
         </div>
       </div>
       <div>
-        <label>आपकी देशी गायों की संख्या</label>
+        <label>Number of indigenous cows you have</label>
         <select defaultValue="">
           <option value="" disabled>
-            चुनें
+            Select
           </option>
-          <option>कोई नहीं (नई शुरुआत)</option>
+          <option>None (just starting)</option>
           <option>1–2</option>
           <option>3–5</option>
           <option>6–10</option>
-          <option>10 से अधिक</option>
+          <option>More than 10</option>
         </select>
       </div>
       <div>
-        <label>संदेश / आवश्यकता</label>
-        <textarea rows={4} placeholder="अपनी आवश्यकता संक्षेप में लिखें..." />
+        <label>Message / Requirement</label>
+        <textarea rows={4} placeholder="Describe your requirement briefly..." />
       </div>
       <button className="btn btn-primary" type="submit">
-        अनुरोध भेजें →
+        Send Request →
       </button>
     </form>
   );

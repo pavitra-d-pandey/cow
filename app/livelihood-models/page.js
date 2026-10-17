@@ -2,26 +2,25 @@ import PageHead from "../components/PageHead";
 import CTABand from "../components/CTABand";
 import { livelihoodModels } from "../data/site";
 
-export const metadata = { title: "आजीविका मॉडल" };
+export const metadata = { title: "Livelihood Models" };
 
 export default function LivelihoodModels() {
   return (
     <>
       <PageHead
-        title="देशी गौ-आधारित आजीविका मॉडल"
-        crumb="आजीविका मॉडल"
-        lead="हर मॉडल के साथ अनुमानित निवेश, मासिक आय और वापसी-अवधि — ताकि आप अपनी क्षमता के अनुसार सही उद्यम चुन सकें।"
+        title="Indigenous Cow-Based Livelihood Models"
+        crumb="Livelihood Models"
+        lead="Every model comes with estimated investment, monthly income and payback period — so you can choose the right enterprise for your capacity."
       />
 
       <section className="section">
         <div className="container">
           <div className="center" style={{ marginBottom: 36 }}>
-            <span className="eyebrow">आय के सिद्ध रास्ते</span>
-            <h2 className="section-title">कम लागत, निश्चित माँग, नियमित आय</h2>
+            <span className="eyebrow">Proven paths to income</span>
+            <h2 className="section-title">Low cost, assured demand, regular income</h2>
             <p className="section-lead">
-              ये सभी मॉडल किसानों के साथ क्षेत्र-परीक्षण के बाद तैयार किए गए हैं।
-              प्रत्येक के लिए प्रशिक्षण, लोकल-टेक किट और बाज़ार-संपर्क की पूरी
-              सहायता उपलब्ध है।
+              All of these models have been field-tested with farmers. Each comes
+              with full support for training, a local-tech kit and market linkage.
             </p>
           </div>
 
@@ -52,8 +51,7 @@ export default function LivelihoodModels() {
                   />
                 </div>
                 <div style={{ direction: "ltr" }}>
-                  <span className="chip">{m.en}</span>
-                  <h2 style={{ fontSize: 26, margin: "10px 0 8px" }}>
+                  <h2 style={{ fontSize: 26, margin: "0 0 8px" }}>
                     {m.title}
                   </h2>
                   <p style={{ color: "var(--muted)", marginBottom: 14 }}>
@@ -72,9 +70,9 @@ export default function LivelihoodModels() {
                     }}
                   >
                     {[
-                      ["निवेश", m.invest],
-                      ["मासिक आय", m.income],
-                      ["वापसी-अवधि", m.payback],
+                      ["Investment", m.invest],
+                      ["Monthly Income", m.income],
+                      ["Payback", m.payback],
                     ].map(([k, v]) => (
                       <div
                         key={k}
@@ -109,8 +107,8 @@ export default function LivelihoodModels() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 24 }}>
-            <span className="eyebrow">एक नज़र में तुलना</span>
-            <h2 className="section-title">अपनी क्षमता के अनुसार चुनें</h2>
+            <span className="eyebrow">Compare at a glance</span>
+            <h2 className="section-title">Choose according to your capacity</h2>
           </div>
           <div style={{ overflowX: "auto" }}>
             <table
@@ -126,10 +124,10 @@ export default function LivelihoodModels() {
             >
               <thead>
                 <tr style={{ background: "var(--green-800)", color: "#fff" }}>
-                  <th style={th}>मॉडल</th>
-                  <th style={th}>निवेश</th>
-                  <th style={th}>मासिक आय</th>
-                  <th style={th}>वापसी-अवधि</th>
+                  <th style={th}>Model</th>
+                  <th style={th}>Investment</th>
+                  <th style={th}>Monthly Income</th>
+                  <th style={th}>Payback</th>
                 </tr>
               </thead>
               <tbody>
@@ -150,15 +148,15 @@ export default function LivelihoodModels() {
             </table>
           </div>
           <p style={{ fontSize: 13, color: "var(--muted)", marginTop: 12 }}>
-            * आँकड़े संकेतक हैं और स्थान, बाज़ार एवं प्रबंधन के अनुसार भिन्न हो
-            सकते हैं।
+            * Figures are indicative and may vary by location, market and
+            management.
           </p>
         </div>
       </section>
 
       <CTABand
-        title="अपने लिए सही आजीविका मॉडल चुनें"
-        text="हमारी टीम आपकी गायों, संसाधनों और बाज़ार के अनुसार सबसे उपयुक्त मॉडल की सलाह देगी।"
+        title="Choose the right livelihood model for you"
+        text="Our team will advise the most suitable model based on your cows, resources and market."
       />
     </>
   );

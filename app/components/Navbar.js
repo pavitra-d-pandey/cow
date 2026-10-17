@@ -11,7 +11,7 @@ export default function Navbar() {
     <>
       <div className="topbar">
         <div className="container">
-          <span>{org.parent} • {org.reg}</span>
+          <span>{org.name} • {org.reg}</span>
           <span className="tb-right">
             <a href={`tel:${org.phone.replace(/\s/g, "")}`}>📞 {org.phone}</a>
             <a href={`mailto:${org.email}`}>✉ {org.email}</a>
@@ -22,16 +22,16 @@ export default function Navbar() {
       <nav className="nav">
         <div className="container">
           <Link href="/" className="brand" onClick={() => setOpen(false)}>
-            <span className="brand-mark">गौ</span>
+            <img className="brand-logo" src={org.logo} alt={`${org.name} logo`} />
             <span className="brand-text">
-              <strong>{org.acronym}</strong>
-              <span>{org.centre}</span>
+              <strong>{org.shortName}</strong>
+              <span>{org.nameHi}</span>
             </span>
           </Link>
 
           <button
             className="menu-toggle"
-            aria-label="मेन्यू"
+            aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
           >
             ☰

@@ -2,23 +2,23 @@ import PageHead from "../components/PageHead";
 import CTABand from "../components/CTABand";
 import { galleryImages, stats, testimonials } from "../data/site";
 
-export const metadata = { title: "प्रभाव एवं गैलरी" };
+export const metadata = { title: "Impact & Gallery" };
 
 export default function Gallery() {
   return (
     <>
       <PageHead
-        title="प्रभाव एवं गैलरी"
-        crumb="प्रभाव एवं गैलरी"
-        lead="मैदान से तस्वीरें, किसानों की कहानियाँ और ज़मीन पर दिखता बदलाव।"
+        title="Impact & Gallery"
+        crumb="Impact & Gallery"
+        lead="Photos from the field, farmers' stories and change you can see on the ground."
       />
 
       {/* Impact stats */}
       <section className="section">
         <div className="container">
           <div className="center" style={{ marginBottom: 30 }}>
-            <span className="eyebrow">हमारा प्रभाव</span>
-            <h2 className="section-title">संख्याओं में बदलाव</h2>
+            <span className="eyebrow">Our Impact</span>
+            <h2 className="section-title">Change in numbers</h2>
           </div>
           <div className="stats">
             {stats.map((s) => (
@@ -38,8 +38,8 @@ export default function Gallery() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 30 }}>
-            <span className="eyebrow">फ़ोटो गैलरी</span>
-            <h2 className="section-title">मैदान से झलकियाँ</h2>
+            <span className="eyebrow">Photo Gallery</span>
+            <h2 className="section-title">Glimpses from the field</h2>
           </div>
           <div className="masonry">
             {galleryImages.map((g) => (
@@ -56,8 +56,8 @@ export default function Gallery() {
       <section className="section">
         <div className="container">
           <div className="center" style={{ marginBottom: 30 }}>
-            <span className="eyebrow">सफलता की कहानियाँ</span>
-            <h2 className="section-title">किसानों की ज़ुबानी</h2>
+            <span className="eyebrow">Success Stories</span>
+            <h2 className="section-title">In farmers' words</h2>
           </div>
           <div className="grid grid-3">
             {testimonials.map((t) => (
@@ -82,16 +82,16 @@ export default function Gallery() {
           <div className="grid grid-3">
             {[
               {
-                t: "महिला सशक्तिकरण",
-                d: "640+ स्वयं सहायता समूहों की महिलाओं को घर-बैठे आय का स्थायी स्रोत मिला।",
+                t: "Women's Empowerment",
+                d: "Women from 640+ self-help groups gained a steady source of income from home.",
               },
               {
-                t: "जैविक खेती को बढ़ावा",
-                d: "वर्मी-कम्पोस्ट व पंचगव्य के प्रसार से हज़ारों एकड़ में रासायनिक इनपुट में कमी।",
+                t: "Boost to Organic Farming",
+                d: "The spread of vermicompost and Panchgavya cut chemical inputs across thousands of acres.",
               },
               {
-                t: "पर्यावरण लाभ",
-                d: "बायोगैस, सिल्वीपास्चर व जैव-CNG पायलट से स्वच्छ ऊर्जा व हरित-आवरण में वृद्धि।",
+                t: "Environmental Benefit",
+                d: "Biogas, silvipasture and Bio-CNG pilots increased clean energy and green cover.",
               },
             ].map((c) => (
               <div

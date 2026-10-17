@@ -5,25 +5,27 @@ import { org } from "./data/site";
 
 export const metadata = {
   title: {
-    default: `${org.acronym} — ${org.centreEn}`,
+    default: `${org.name} — Indigenous Cow-Based Livelihood & Research`,
     template: `%s | ${org.acronym}`,
   },
   description:
-    "देशी गौ-आधारित आजीविका एवं प्रौद्योगिकी केंद्र (CIC-BLT) — देशी गायों से किसानों के लिए आय-सृजक मॉडल, प्रशिक्षण और लोकल-टेक किट।",
+    "Gau Amrit Vigyan Anusandhan Sansthan — a non-profit, charitable and scientific research institution building income models, training and local-tech kits for farmers based on indigenous cows.",
   keywords: [
-    "देशी गाय",
-    "गौ आधारित आजीविका",
-    "CIC-BLT",
-    "पंचगव्य",
-    "वर्मी कम्पोस्ट",
-    "A2 दूध",
-    "किसान प्रशिक्षण",
+    "indigenous cow",
+    "gau based livelihood",
+    "Gau Amrit Vigyan Anusandhan Sansthan",
+    "Panchgavya",
+    "vermicompost",
+    "A2 milk",
+    "farmer training",
+    "Prayagraj",
+    "Uttar Pradesh",
   ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="hi">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

@@ -2,15 +2,15 @@ import PageHead from "../components/PageHead";
 import CTABand from "../components/CTABand";
 import { trainingPrograms } from "../data/site";
 
-export const metadata = { title: "प्रशिक्षण" };
+export const metadata = { title: "Training" };
 
 export default function Training() {
   return (
     <>
       <PageHead
-        title="प्रशिक्षण एवं कौशल विकास"
-        crumb="प्रशिक्षण"
-        lead="नए किसानों से लेकर महिला SHG और सरकारी गौशाला कर्मियों तक — हर वर्ग के लिए व्यावहारिक, हैंड्स-ऑन पाठ्यक्रम। अधिकांश बैच सरकारी-प्रायोजित एवं नि:शुल्क।"
+        title="Training & Skill Development"
+        crumb="Training"
+        lead="Hands-on courses for every group — from new farmers to women's SHGs and government gaushala staff. Most batches are government-sponsored and free."
       />
 
       {/* Why train with us */}
@@ -18,10 +18,10 @@ export default function Training() {
         <div className="container">
           <div className="grid grid-4">
             {[
-              { icon: "🧑‍🌾", t: "हैंड्स-ऑन", d: "क्लासरूम कम, अभ्यास अधिक — गौशाला व इकाई में सीधा प्रशिक्षण।" },
-              { icon: "🎓", t: "प्रमाणपत्र", d: "पाठ्यक्रम पूर्ण करने पर मान्य प्रमाणपत्र एवं किट-पात्रता।" },
-              { icon: "💰", t: "नि:शुल्क बैच", d: "सरकारी-प्रायोजित बैच नि:शुल्क; अन्य पर छात्रवृत्ति।" },
-              { icon: "🔗", t: "पोस्ट-ट्रेनिंग सहायता", d: "किट, ऋण-मार्गदर्शन एवं बाज़ार-संपर्क की निरंतर मदद।" },
+              { icon: "🧑‍🌾", t: "Hands-On", d: "Less classroom, more practice — direct training at the gaushala and unit." },
+              { icon: "🎓", t: "Certificate", d: "A recognised certificate and kit-eligibility on completing the course." },
+              { icon: "💰", t: "Free Batches", d: "Government-sponsored batches are free; scholarships for others." },
+              { icon: "🔗", t: "Post-Training Support", d: "Continued help with kits, loan guidance and market linkage." },
             ].map((c) => (
               <div className="info-card" key={c.t}>
                 <div className="icon-badge">{c.icon}</div>
@@ -37,8 +37,8 @@ export default function Training() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 34 }}>
-            <span className="eyebrow">पाठ्यक्रम सूची</span>
-            <h2 className="section-title">उपलब्ध प्रशिक्षण कार्यक्रम</h2>
+            <span className="eyebrow">Course List</span>
+            <h2 className="section-title">Available training programmes</h2>
           </div>
           <div className="grid grid-2">
             {trainingPrograms.map((t) => (
@@ -46,9 +46,8 @@ export default function Training() {
                 <div className="card-body">
                   <span className="chip">{t.duration}</span>
                   <h3>{t.title}</h3>
-                  <div className="en">{t.en}</div>
                   <p>
-                    <b>किसके लिए:</b> {t.for}
+                    <b>For whom:</b> {t.for}
                   </p>
                   <ul className="ul-check">
                     {t.learn.map((l) => (
@@ -57,10 +56,10 @@ export default function Training() {
                   </ul>
                   <div className="meta-row">
                     <span>
-                      अवधि: <b>{t.duration}</b>
+                      Duration: <b>{t.duration}</b>
                     </span>
                     <span>
-                      शुल्क: <b>{t.fee}</b>
+                      Fee: <b>{t.fee}</b>
                     </span>
                   </div>
                 </div>
@@ -77,7 +76,7 @@ export default function Training() {
             <div>
               <img
                 src="/images/training-process.jpg"
-                alt="प्रशिक्षण प्रक्रिया"
+                alt="Training process"
                 style={{
                   borderRadius: 14,
                   width: "100%",
@@ -88,14 +87,14 @@ export default function Training() {
               />
             </div>
             <div>
-              <span className="eyebrow">नामांकन कैसे करें</span>
-              <h2 className="section-title">सरल नामांकन प्रक्रिया</h2>
+              <span className="eyebrow">How to Enrol</span>
+              <h2 className="section-title">A simple enrolment process</h2>
               <ul className="timeline" style={{ marginTop: 18 }}>
                 {[
-                  ["चरण 1", "संपर्क फ़ॉर्म भरें या किसान-हेल्पलाइन पर कॉल करें।"],
-                  ["चरण 2", "पात्रता व निकटतम बैच की जानकारी प्राप्त करें।"],
-                  ["चरण 3", "आधार व बैंक-विवरण के साथ पंजीकरण पूर्ण करें।"],
-                  ["चरण 4", "प्रशिक्षण में भाग लें — प्रमाणपत्र व किट-पात्रता।"],
+                  ["Step 1", "Fill the contact form or call the farmer helpline."],
+                  ["Step 2", "Get details of your eligibility and the nearest batch."],
+                  ["Step 3", "Complete registration with Aadhaar and bank details."],
+                  ["Step 4", "Attend the training — certificate and kit-eligibility."],
                 ].map(([y, t]) => (
                   <li key={y}>
                     <span className="yr">{y}</span>
@@ -112,8 +111,8 @@ export default function Training() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 24 }}>
-            <span className="eyebrow">कैलेंडर</span>
-            <h2 className="section-title">आगामी बैच (2026)</h2>
+            <span className="eyebrow">Calendar</span>
+            <h2 className="section-title">Upcoming batches (2026)</h2>
           </div>
           <div style={{ overflowX: "auto" }}>
             <table
@@ -129,19 +128,19 @@ export default function Training() {
             >
               <thead>
                 <tr style={{ background: "var(--green-800)", color: "#fff" }}>
-                  <th style={th}>पाठ्यक्रम</th>
-                  <th style={th}>स्थान</th>
-                  <th style={th}>आरंभ तिथि</th>
-                  <th style={th}>सीटें</th>
+                  <th style={th}>Course</th>
+                  <th style={th}>Venue</th>
+                  <th style={th}>Start Date</th>
+                  <th style={th}>Seats</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["गौ-उद्यमी आधार पाठ्यक्रम", "लखनऊ (मुख्य केंद्र)", "15 जून 2026", "उपलब्ध"],
-                  ["पंचगव्य विशेषज्ञता", "लखनऊ", "22 जून 2026", "सीमित"],
-                  ["महिला SHG उत्पाद-निर्माण", "मलिहाबाद", "01 जुलाई 2026", "उपलब्ध"],
-                  ["A2 बिलोना डेयरी प्रबंधन", "काकोरी", "10 जुलाई 2026", "सीमित"],
-                  ["गौशाला कर्मी क्षमता-संवर्धन", "जिला-स्तर (विभाग)", "जुलाई 2026", "विभाग-नामित"],
+                  ["Gau-Entrepreneur Foundation", "Prayagraj (Main Centre)", "15 June 2026", "Available"],
+                  ["Panchgavya Specialist", "Prayagraj", "22 June 2026", "Limited"],
+                  ["Women SHG Product-Making", "Hanumanganj", "01 July 2026", "Available"],
+                  ["A2 Bilona Dairy Management", "Soraon", "10 July 2026", "Limited"],
+                  ["Gaushala Staff Capacity Building", "District-level (Dept.)", "July 2026", "Dept.-nominated"],
                 ].map((r, i) => (
                   <tr key={i} style={{ background: i % 2 ? "var(--cream)" : "#fff" }}>
                     {r.map((c, j) => (
@@ -158,8 +157,8 @@ export default function Training() {
       </section>
 
       <CTABand
-        title="अगले बैच के लिए सीट सुरक्षित करें"
-        text="सीटें सीमित हैं। आज ही पंजीकरण करें और नि:शुल्क प्रशिक्षण का लाभ उठाएँ।"
+        title="Reserve your seat for the next batch"
+        text="Seats are limited. Register today and benefit from free training."
       />
     </>
   );

@@ -5,7 +5,7 @@ export default function PageHead({ title, lead, crumb }) {
     <header className="page-head">
       <div className="container">
         <div className="crumbs">
-          <Link href="/">मुख्य पृष्ठ</Link> / {crumb || title}
+          <Link href="/">Home</Link> / {crumb || title}
         </div>
         <h1>{title}</h1>
         {lead && <p>{lead}</p>}

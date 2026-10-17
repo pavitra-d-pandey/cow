@@ -2,16 +2,16 @@ import PageHead from "../components/PageHead";
 import CTABand from "../components/CTABand";
 import { news } from "../data/site";
 
-export const metadata = { title: "समाचार" };
+export const metadata = { title: "News" };
 
 export default function News() {
   const [featured, ...rest] = news;
   return (
     <>
       <PageHead
-        title="समाचार एवं घोषणाएँ"
-        crumb="समाचार"
-        lead="केंद्र की गतिविधियाँ, उपलब्धियाँ, प्रशिक्षण-घोषणाएँ और कार्यक्रम।"
+        title="News & Announcements"
+        crumb="News"
+        lead="The Sansthan's activities, achievements, training announcements and events."
       />
 
       {/* Featured */}
@@ -45,7 +45,7 @@ export default function News() {
               <h2 style={{ fontSize: 28, marginBottom: 10 }}>{featured.title}</h2>
               <p style={{ color: "var(--muted)" }}>{featured.text}</p>
               <a href="#" className="btn btn-green" style={{ marginTop: 16 }}>
-                पूरा पढ़ें →
+                Read more →
               </a>
             </div>
           </article>
@@ -56,8 +56,8 @@ export default function News() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 30 }}>
-            <span className="eyebrow">और समाचार</span>
-            <h2 className="section-title">हाल की गतिविधियाँ</h2>
+            <span className="eyebrow">More News</span>
+            <h2 className="section-title">Recent activities</h2>
           </div>
           <div className="grid grid-3">
             {rest.map((n) => (
@@ -73,7 +73,7 @@ export default function News() {
                   <h3 style={{ fontSize: 18 }}>{n.title}</h3>
                   <p>{n.text}</p>
                   <a href="#" style={{ color: "var(--saffron-dark)", fontWeight: 700, fontSize: 14 }}>
-                    पूरा पढ़ें →
+                    Read more →
                   </a>
                 </div>
               </article>
@@ -87,15 +87,15 @@ export default function News() {
         <div className="container">
           <div className="cta-band" style={{ background: "linear-gradient(120deg, var(--green-700), var(--green-900))" }}>
             <div>
-              <h2>अपडेट सीधे पाएँ</h2>
-              <p>नए बैच, घोषणाएँ और किसान-योजनाओं की जानकारी के लिए जुड़ें।</p>
+              <h2>Get updates directly</h2>
+              <p>Subscribe for new batches, announcements and farmer schemes.</p>
             </div>
             <form
               style={{ display: "flex", gap: 10, flexWrap: "wrap" }}
               action="#"
             >
               <input
-                placeholder="आपका मोबाइल/ईमेल"
+                placeholder="Your mobile / email"
                 style={{
                   padding: "12px 16px",
                   borderRadius: 999,
@@ -105,7 +105,7 @@ export default function News() {
                 }}
               />
               <button className="btn btn-primary" type="submit">
-                जुड़ें
+                Subscribe
               </button>
             </form>
           </div>

@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="cols">
           <div>
             <div className="brand" style={{ marginBottom: 14 }}>
-              <span className="brand-mark">गौ</span>
+              <img className="brand-logo" src={org.logo} alt={`${org.name} logo`} />
               <span className="brand-text">
-                <strong>{org.acronym}</strong>
-                <span>{org.centreEn}</span>
+                <strong>{org.shortName}</strong>
+                <span>{org.name}</span>
               </span>
             </div>
             <p style={{ fontSize: 14, color: "#a9c0b1", maxWidth: 320 }}>
-              {org.parent} की एक इकाई। देशी गायों के माध्यम से किसानों के लिए
-              आय-सृजक मॉडल, प्रशिक्षण एवं किफ़ायती लोकल-टेक किट।
+              {org.type}. Building income models, training and affordable
+              local-tech kits for farmers through indigenous cows.
             </p>
             <p style={{ fontSize: 13, color: "#8aa495", marginTop: 12 }}>
               {org.estd} • {org.reg}
@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>त्वरित लिंक</h4>
+            <h4>Quick Links</h4>
             {nav.slice(0, 6).map((n) => (
               <Link key={n.href} href={n.href}>
                 {n.label}
@@ -33,16 +33,16 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>सेवाएँ</h4>
-            <Link href="/livelihood-models">आजीविका मॉडल</Link>
-            <Link href="/training">किसान प्रशिक्षण</Link>
-            <Link href="/tech-kits">लोकल-टेक किट</Link>
-            <Link href="/resources">डाउनलोड एवं संसाधन</Link>
-            <Link href="/faq">सामान्य प्रश्न</Link>
+            <h4>Services</h4>
+            <Link href="/livelihood-models">Livelihood Models</Link>
+            <Link href="/training">Farmer Training</Link>
+            <Link href="/tech-kits">Local-Tech Kits</Link>
+            <Link href="/resources">Downloads & Resources</Link>
+            <Link href="/faq">FAQ</Link>
           </div>
 
           <div>
-            <h4>संपर्क</h4>
+            <h4>Contact</h4>
             <p style={{ fontSize: 14, color: "#c9d8ce" }}>
               {org.address} {org.city}, {org.state} – {org.pincode}
             </p>
@@ -59,10 +59,10 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} {org.centre} ({org.acronym})। सर्वाधिकार
-            सुरक्षित।
+            © {new Date().getFullYear()} {org.name} ({org.acronym}). All rights
+            reserved.
           </span>
-          <span>एक गैर-लाभकारी, धर्मार्थ एवं वैज्ञानिक अनुसंधान पहल।</span>
+          <span>A non-profit, charitable & scientific research initiative.</span>
         </div>
       </div>
     </footer>

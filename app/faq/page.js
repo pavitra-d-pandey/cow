@@ -2,15 +2,15 @@ import PageHead from "../components/PageHead";
 import CTABand from "../components/CTABand";
 import { faqs } from "../data/site";
 
-export const metadata = { title: "सामान्य प्रश्न" };
+export const metadata = { title: "FAQ" };
 
 export default function FAQ() {
   return (
     <>
       <PageHead
-        title="सामान्य प्रश्न (FAQ)"
-        crumb="सामान्य प्रश्न"
-        lead="किसानों द्वारा सबसे अधिक पूछे जाने वाले प्रश्नों के उत्तर। आपका प्रश्न यहाँ न हो तो हमें संपर्क करें।"
+        title="Frequently Asked Questions"
+        crumb="FAQ"
+        lead="Answers to the questions farmers ask most. If yours isn't here, get in touch with us."
       />
 
       <section className="section">
@@ -26,14 +26,14 @@ export default function FAQ() {
 
       <section className="section alt">
         <div className="container center">
-          <span className="eyebrow">अभी भी प्रश्न है?</span>
-          <h2 className="section-title">हम मदद के लिए तैयार हैं</h2>
+          <span className="eyebrow">Still have a question?</span>
+          <h2 className="section-title">We're here to help</h2>
           <p className="section-lead" style={{ marginBottom: 22 }}>
-            किसान-हेल्पलाइन पर कॉल करें या संपर्क फ़ॉर्म भरें — हमारी टीम आपकी
-            सहायता करेगी।
+            Call the farmer helpline or fill the contact form — our team will
+            assist you.
           </p>
           <a href="/contact" className="btn btn-primary">
-            संपर्क करें →
+            Contact Us →
           </a>
         </div>
       </section>

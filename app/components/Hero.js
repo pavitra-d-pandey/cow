@@ -26,10 +26,10 @@ export default function Hero() {
           <p>{s.text}</p>
           <div className="hero-actions">
             <Link href="/livelihood-models" className="btn btn-primary">
-              आजीविका मॉडल देखें →
+              Explore Livelihood Models →
             </Link>
             <Link href="/training" className="btn btn-outline">
-              नि:शुल्क प्रशिक्षण
+              Free Training
             </Link>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Hero() {
           <button
             key={idx}
             className={idx === i ? "active" : ""}
-            aria-label={`स्लाइड ${idx + 1}`}
+            aria-label={`Slide ${idx + 1}`}
             onClick={() => setI(idx)}
           />
         ))}

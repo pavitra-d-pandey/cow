@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export default function CTABand({
-  title = "अपनी देशी गाय को आय का स्रोत बनाएँ",
-  text = "नि:शुल्क प्रशिक्षण के लिए आज ही पंजीकरण करें या किसान-हेल्पलाइन पर संपर्क करें।",
+  title = "Make your indigenous cow a source of income",
+  text = "Register today for free training or reach out on the farmer helpline.",
 }) {
   return (
     <section className="section">
@@ -14,10 +14,10 @@ export default function CTABand({
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link href="/contact" className="btn btn-green">
-              अभी पंजीकरण करें
+              Register Now
             </Link>
             <Link href="/livelihood-models" className="btn btn-outline">
-              मॉडल देखें
+              View Models
             </Link>
           </div>
         </div>

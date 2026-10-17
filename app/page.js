@@ -22,35 +22,37 @@ export default function Home() {
         <div className="container">
           <div className="split">
             <div>
-              <span className="eyebrow">केंद्र के बारे में</span>
+              <span className="eyebrow">About the Sansthan</span>
               <h2 className="section-title">
-                देशी गाय — किसान की सबसे भरोसेमंद आय-इकाई
+                The indigenous cow — a farmer's most dependable income unit
               </h2>
               <div className="prose">
                 <p>
-                  <strong>{org.centre} ({org.acronym})</strong>, {org.parent} की
-                  एक समर्पित इकाई है, जो इस सिद्धांत पर कार्य करती है कि देशी गाय
-                  केवल दूध नहीं, बल्कि गोबर, गोमूत्र, पंचगव्य और जैव-ऊर्जा के
-                  माध्यम से एक पूर्ण <em>सूक्ष्म-उद्यम</em> है।
+                  <strong>{org.name} ({org.acronym})</strong> is a non-profit,
+                  charitable and scientific research institution working on a
+                  simple principle — the indigenous cow is not just milk, but a
+                  complete <em>micro-enterprise</em> through dung, urine,
+                  Panchgavya and bio-energy.
                 </p>
                 <p>
-                  हम किसानों को तीन चीज़ें एक साथ देते हैं — <b>सिद्ध आय-मॉडल</b>,{" "}
-                  <b>व्यावहारिक प्रशिक्षण</b> और किफ़ायती <b>लोकल-टेक किट</b> —
-                  ताकि हर देशी गाय गाँव में आमदनी और आत्मनिर्भरता का स्रोत बने।
+                  We give farmers three things together — <b>proven income
+                  models</b>, <b>hands-on training</b> and affordable{" "}
+                  <b>local-tech kits</b> — so that every indigenous cow becomes a
+                  source of income and self-reliance in the village.
                 </p>
                 <p>
-                  हमारा लक्ष्य है: <b>कम लागत, अधिक आय</b> और <b>शून्य-अपशिष्ट</b>{" "}
-                  आधारित ग्रामीण चक्रीय अर्थव्यवस्था।
+                  Our goal: <b>lower cost, higher income</b> and a{" "}
+                  <b>zero-waste</b> rural circular economy.
                 </p>
               </div>
               <Link href="/about" className="btn btn-green" style={{ marginTop: 14 }}>
-                हमारी कहानी पढ़ें →
+                Read our story →
               </Link>
             </div>
             <div>
               <img
                 src="/images/about-intro.jpg"
-                alt="हाई-टेक गौशाला और किसान"
+                alt="Hi-tech gaushala and farmer"
                 style={{
                   borderRadius: 14,
                   width: "100%",
@@ -68,8 +70,8 @@ export default function Home() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 34 }}>
-            <span className="eyebrow">हमारा प्रभाव</span>
-            <h2 className="section-title">ज़मीन पर दिखता बदलाव</h2>
+            <span className="eyebrow">Our Impact</span>
+            <h2 className="section-title">Change you can see on the ground</h2>
           </div>
           <div className="stats">
             {stats.map((s) => (
@@ -89,11 +91,11 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="center" style={{ marginBottom: 34 }}>
-            <span className="eyebrow">आय-सृजक मॉडल</span>
-            <h2 className="section-title">देशी गाय से कमाई के सिद्ध रास्ते</h2>
+            <span className="eyebrow">Income Models</span>
+            <h2 className="section-title">Proven ways to earn from the indigenous cow</h2>
             <p className="section-lead">
-              हर मॉडल के साथ निवेश, अनुमानित मासिक आय और वापसी-अवधि का स्पष्ट
-              आकलन — ताकि आप सोच-समझकर शुरुआत कर सकें।
+              Every model comes with a clear estimate of investment, monthly
+              income and payback period — so you can start with confidence.
             </p>
           </div>
           <div className="grid grid-3">
@@ -104,14 +106,13 @@ export default function Home() {
                 </div>
                 <div className="card-body">
                   <h3>{m.title}</h3>
-                  <div className="en">{m.en}</div>
                   <p>{m.summary}</p>
                   <div className="meta-row">
                     <span>
-                      निवेश: <b>{m.invest}</b>
+                      Investment: <b>{m.invest}</b>
                     </span>
                     <span>
-                      आय: <b>{m.income}</b>
+                      Income: <b>{m.income}</b>
                     </span>
                   </div>
                 </div>
@@ -120,7 +121,7 @@ export default function Home() {
           </div>
           <div className="center" style={{ marginTop: 30 }}>
             <Link href="/livelihood-models" className="btn btn-primary">
-              सभी मॉडल विस्तार से देखें →
+              See all models in detail →
             </Link>
           </div>
         </div>
@@ -131,31 +132,31 @@ export default function Home() {
         <div className="container">
           <div className="center" style={{ marginBottom: 34 }}>
             <span className="eyebrow" style={{ color: "var(--saffron)" }}>
-              हमारी कार्य-प्रणाली
+              How We Work
             </span>
-            <h2 className="section-title">किसान से उद्यमी तक — 4 आसान चरण</h2>
+            <h2 className="section-title">From farmer to entrepreneur — 4 easy steps</h2>
           </div>
           <div className="grid grid-4">
             {[
               {
                 n: "1",
-                t: "पंजीकरण व आकलन",
-                d: "किसान का पंजीकरण, उपलब्ध गाय/संसाधन का आकलन और सही मॉडल का चयन।",
+                t: "Registration & Assessment",
+                d: "Register the farmer, assess available cows/resources and select the right model.",
               },
               {
                 n: "2",
-                t: "प्रशिक्षण",
-                d: "व्यावहारिक (हैंड्स-ऑन) प्रशिक्षण, गुणवत्ता मानक और इकाई-योजना (DPR)।",
+                t: "Training",
+                d: "Hands-on training, quality standards and a unit plan (DPR).",
               },
               {
                 n: "3",
-                t: "लोकल-टेक किट",
-                d: "रियायती दर/किस्तों व सब्सिडी के साथ उपकरण और सेटअप सहायता।",
+                t: "Local-Tech Kit",
+                d: "Equipment and setup support at a concessional rate, in instalments, with subsidy.",
               },
               {
                 n: "4",
-                t: "बाज़ार-संपर्क",
-                d: "FPO, मंदिर-ट्रस्ट, ऑनलाइन व D2C के माध्यम से निरंतर बिक्री।",
+                t: "Market Linkage",
+                d: "Continuous sales through FPOs, temple trusts, online and D2C channels.",
               },
             ].map((step) => (
               <div
@@ -200,7 +201,7 @@ export default function Home() {
             <div>
               <img
                 src="/images/training-preview.jpg"
-                alt="किसान प्रशिक्षण सत्र"
+                alt="Farmer training session"
                 style={{
                   borderRadius: 14,
                   width: "100%",
@@ -211,11 +212,12 @@ export default function Home() {
               />
             </div>
             <div>
-              <span className="eyebrow">प्रशिक्षण एवं कौशल</span>
-              <h2 className="section-title">हुनर सीखें, आत्मनिर्भर बनें</h2>
+              <span className="eyebrow">Training & Skills</span>
+              <h2 className="section-title">Learn a skill, become self-reliant</h2>
               <p className="section-lead" style={{ marginBottom: 18 }}>
-                नए किसानों से लेकर महिला SHG और सरकारी गौशाला कर्मियों तक — सबके
-                लिए लक्षित पाठ्यक्रम। अधिकांश बैच सरकारी-प्रायोजित एवं नि:शुल्क।
+                Targeted courses for everyone — from new farmers to women's SHGs
+                and government gaushala staff. Most batches are
+                government-sponsored and free.
               </p>
               <ul className="ul-check" style={{ marginBottom: 18 }}>
                 {trainingPrograms.slice(0, 4).map((t) => (
@@ -225,7 +227,7 @@ export default function Home() {
                 ))}
               </ul>
               <Link href="/training" className="btn btn-green">
-                सभी पाठ्यक्रम देखें →
+                See all courses →
               </Link>
             </div>
           </div>
@@ -236,8 +238,8 @@ export default function Home() {
       <section className="section alt">
         <div className="container">
           <div className="center" style={{ marginBottom: 34 }}>
-            <span className="eyebrow">किसानों की ज़ुबानी</span>
-            <h2 className="section-title">बदलती ज़िंदगियाँ, बढ़ती आमदनी</h2>
+            <span className="eyebrow">In Farmers' Words</span>
+            <h2 className="section-title">Changing lives, rising incomes</h2>
           </div>
           <div className="grid grid-3">
             {testimonials.map((t) => (
@@ -261,8 +263,8 @@ export default function Home() {
         <div className="container">
           <div className="split" style={{ alignItems: "start" }}>
             <div>
-              <span className="eyebrow">हमारी यात्रा</span>
-              <h2 className="section-title">2021 से अब तक</h2>
+              <span className="eyebrow">Our Journey</span>
+              <h2 className="section-title">From 2021 to today</h2>
               <ul className="timeline" style={{ marginTop: 18 }}>
                 {timeline.map((t) => (
                   <li key={t.year}>
@@ -273,8 +275,8 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <span className="eyebrow">ताज़ा अपडेट</span>
-              <h2 className="section-title">समाचार एवं घोषणाएँ</h2>
+              <span className="eyebrow">Latest Updates</span>
+              <h2 className="section-title">News & Announcements</h2>
               <div style={{ display: "grid", gap: 14, marginTop: 18 }}>
                 {news.slice(0, 3).map((n) => (
                   <div
@@ -311,7 +313,7 @@ export default function Home() {
                 ))}
               </div>
               <Link href="/news" className="btn btn-green" style={{ marginTop: 16 }}>
-                सभी समाचार →
+                All news →
               </Link>
             </div>
           </div>
@@ -321,8 +323,8 @@ export default function Home() {
       {/* Partners */}
       <section className="section alt">
         <div className="container center">
-          <span className="eyebrow">सहयोगी एवं समर्थक</span>
-          <h2 className="section-title">विश्वसनीय साझेदारी</h2>
+          <span className="eyebrow">Partners & Supporters</span>
+          <h2 className="section-title">Trusted collaborations</h2>
           <div
             style={{
               display: "flex",
